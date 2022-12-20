@@ -83,14 +83,7 @@ def pegarNomeDaEmpresa():#pega o nome da empresa e joga para lista
         By.CLASS_NAME, 'case27-primary-text').text
     dados.append(nomeDaEmpresa)
 
-
-def pegarEndereco():#pega o nome da empresa e joga para lista
-    try:
-        endereco = driver.find_element(
-            By.CLASS_NAME, "map-block-address").get_attribute('innerText')
-        dados.append(endereco)
-    except:
-        dados.append('endereço nao encontrado')
+#
 
 
 def pegarColaboradores():#pega a quantidade de colaboradores e joga para lista
